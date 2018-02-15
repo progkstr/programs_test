@@ -1,0 +1,17 @@
+D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.csprojResolveAssemblyReference.cache
+D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.Check_cafe.resources
+D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.Properties.Resources.resources
+D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.csproj.GenerateResource.Cache
+D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.csproj.CoreCompileInputs.cache
+D:\Мишель\vs c#\check_cafe\check_cafe\bin\Debug\Person_SQL.mdf
+D:\Мишель\vs c#\check_cafe\check_cafe\bin\Debug\Person_SQL_log.ldf
+D:\Мишель\vs c#\check_cafe\check_cafe\bin\Debug\check_cafe.exe.config
+D:\Мишель\vs c#\check_cafe\check_cafe\bin\Debug\check_cafe.exe
+D:\Мишель\vs c#\check_cafe\check_cafe\bin\Debug\check_cafe.pdb
+D:\Мишель\vs c#\check_cafe\check_cafe\bin\Debug\EntityFramework.dll
+D:\Мишель\vs c#\check_cafe\check_cafe\bin\Debug\EntityFramework.SqlServer.dll
+D:\Мишель\vs c#\check_cafe\check_cafe\bin\Debug\EntityFramework.xml
+D:\Мишель\vs c#\check_cafe\check_cafe\bin\Debug\EntityFramework.SqlServer.xml
+D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.exe
+D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.pdb
+D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.Login.resources

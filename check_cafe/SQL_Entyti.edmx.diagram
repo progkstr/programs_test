@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7f23b7f04db442aab3cc22d50bd8844a" Name="Diagram1">
+        <EntityTypeShape EntityType="Person_SQLModel.Change" Width="1.5" PointX="5.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Person_SQLModel.Client" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Person_SQLModel.Employee" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Person_SQLModel.Person" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Person_SQLModel.Table" Width="1.5" PointX="7.5" PointY="4" IsExpanded="true" />
+        <AssociationConnector Association="Person_SQLModel.FK_Change_ToAdmin" ManuallyRouted="false" />
+        <AssociationConnector Association="Person_SQLModel.FK_Change_ToBarista" ManuallyRouted="false" />
+        <AssociationConnector Association="Person_SQLModel.FK_Change_ToHost" ManuallyRouted="false" />
+        <AssociationConnector Association="Person_SQLModel.FK_Change_ToHostes" ManuallyRouted="false" />
+        <AssociationConnector Association="Person_SQLModel.FK_Change_ToOfic1" ManuallyRouted="false" />
+        <AssociationConnector Association="Person_SQLModel.FK_Change_ToOfic2" ManuallyRouted="false" />
+        <AssociationConnector Association="Person_SQLModel.FK_Change_ToPovar" ManuallyRouted="false" />
+        <AssociationConnector Association="Person_SQLModel.FK_Table_ToChange" ManuallyRouted="false" />
+        <AssociationConnector Association="Person_SQLModel.FK_Client_ToPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="Person_SQLModel.FK_Table_ToClient" ManuallyRouted="false" />
+        <AssociationConnector Association="Person_SQLModel.FK_Employee_ToPerson" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
