@@ -37,3 +37,9 @@ C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_ca
 D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.Add_Employee.resources
 D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.Change_Employee.resources
 >>>>>>> 59b96d2a91046bb0545355ae75dad1181e34b91f
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\bin\Debug\MetroFramework.dll
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.Add_Employee.resources
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.Change_Employee.resources

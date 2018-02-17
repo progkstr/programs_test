@@ -7,10 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Components;
+using MetroFramework.Forms;
 
 namespace check_cafe
 {
-    public partial class Login : Form
+    public partial class Login : MetroForm
     {
         internal Employee _host; //данные о хосте, нужно для
         internal string _adres;  //адрес кафе
@@ -47,6 +49,11 @@ namespace check_cafe
         private void bCancel_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
