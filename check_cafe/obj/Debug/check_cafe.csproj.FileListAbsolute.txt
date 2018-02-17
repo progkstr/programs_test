@@ -15,3 +15,20 @@ D:\Мишель\vs c#\check_cafe\check_cafe\bin\Debug\EntityFramework.SqlServer.
 D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.exe
 D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.pdb
 D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.Login.resources
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\bin\Debug\Person_SQL.mdf
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\bin\Debug\Person_SQL_log.ldf
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\bin\Debug\check_cafe.exe.config
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\bin\Debug\check_cafe.exe
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\bin\Debug\check_cafe.pdb
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\bin\Debug\EntityFramework.dll
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\bin\Debug\EntityFramework.xml
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.csprojResolveAssemblyReference.cache
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.Check_cafe.resources
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.Login.resources
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.Properties.Resources.resources
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.csproj.GenerateResource.Cache
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.csproj.CoreCompileInputs.cache
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.exe
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.pdb
