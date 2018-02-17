@@ -39,6 +39,7 @@
             this.AddNewEmployee.TabIndex = 0;
             this.AddNewEmployee.Text = "Зарегистрировать сотрудника";
             this.AddNewEmployee.UseVisualStyleBackColor = true;
+            this.AddNewEmployee.Click += new System.EventHandler(this.AddNewEmployee_Click);
             // 
             // Change_Employee
             // 

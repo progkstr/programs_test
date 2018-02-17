@@ -125,6 +125,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Add_Employee.resx">
+      <DependentUpon>Add_Employee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Change_Employee.resx">
       <DependentUpon>Change_Employee.cs</DependentUpon>
     </EmbeddedResource>

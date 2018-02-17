@@ -15,3 +15,5 @@ D:\Мишель\vs c#\check_cafe\check_cafe\bin\Debug\EntityFramework.SqlServer.
 D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.exe
 D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.pdb
 D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.Login.resources
+D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.Add_Employee.resources
+D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.Change_Employee.resources

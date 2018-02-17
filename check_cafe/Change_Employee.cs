@@ -16,5 +16,13 @@ namespace check_cafe
         {
             InitializeComponent();
         }
+
+        private void AddNewEmployee_Click(object sender, EventArgs e)
+        {
+            using (Add_Employee f_addEmp = new Add_Employee())
+            {
+                f_addEmp.ShowDialog();
+            }
+        }
     }
 }
