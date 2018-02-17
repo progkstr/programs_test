@@ -15,6 +15,7 @@ D:\Мишель\vs c#\check_cafe\check_cafe\bin\Debug\EntityFramework.SqlServer.
 D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.exe
 D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.pdb
 D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.Login.resources
+<<<<<<< HEAD
 C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\bin\Debug\Person_SQL.mdf
 C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\bin\Debug\Person_SQL_log.ldf
 C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\bin\Debug\check_cafe.exe.config
@@ -32,3 +33,7 @@ C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_ca
 C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.csproj.CoreCompileInputs.cache
 C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.exe
 C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.pdb
+=======
+D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.Add_Employee.resources
+D:\Мишель\vs c#\check_cafe\check_cafe\obj\Debug\check_cafe.Change_Employee.resources
+>>>>>>> 59b96d2a91046bb0545355ae75dad1181e34b91f

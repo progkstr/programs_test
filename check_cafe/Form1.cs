@@ -24,6 +24,10 @@ namespace check_cafe
                 host = f_login._host;
                 adres = f_login._adres;
             }
+            using (Change_Employee f_startChange = new Change_Employee())
+            {
+                f_startChange.ShowDialog();
+            }
             //using (var context = new SQL_Cafe())
             //{
             //    var Nhost = context.Employee.ToList();
