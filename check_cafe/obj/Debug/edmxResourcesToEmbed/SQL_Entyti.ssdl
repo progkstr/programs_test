@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Person_SQLModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Change">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Adres" Type="nchar" MaxLength="100" Nullable="false" />
+    <Property Name="Date_in" Type="datetime" Nullable="false" />
+    <Property Name="Date_out" Type="datetime" />
+    <Property Name="Host" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Administrator" Type="uniqueidentifier" />
+    <Property Name="Barista" Type="uniqueidentifier" />
+    <Property Name="Povar" Type="uniqueidentifier" />
+    <Property Name="Oficiant1" Type="uniqueidentifier" />
+    <Property Name="Oficiant2" Type="uniqueidentifier" />
+    <Property Name="Hostes" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Number_card" Type="nchar" MaxLength="12" Nullable="false" />
+    <Property Name="Id_person" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Position" Type="nchar" MaxLength="25" Nullable="false" />
+    <Property Name="Id_person" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Adres" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="12" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Client" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Number_table" Type="int" Nullable="false" />
+    <Property Name="Date_in" Type="datetime" Nullable="false" />
+    <Property Name="Date_out" Type="datetime" />
+    <Property Name="Number_seat" Type="int" Nullable="false" />
+    <Property Name="Id_Change" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Change_ToAdmin">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="Change" Type="Self.Change" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Change">
+        <PropertyRef Name="Administrator" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Change_ToBarista">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="Change" Type="Self.Change" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Change">
+        <PropertyRef Name="Barista" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Change_ToHost">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+    <End Role="Change" Type="Self.Change" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Change">
+        <PropertyRef Name="Host" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Change_ToHostes">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="Change" Type="Self.Change" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Change">
+        <PropertyRef Name="Hostes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Change_ToOfic1">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="Change" Type="Self.Change" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Change">
+        <PropertyRef Name="Oficiant1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Change_ToOfic2">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="Change" Type="Self.Change" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Change">
+        <PropertyRef Name="Oficiant2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Change_ToPovar">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="Change" Type="Self.Change" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Change">
+        <PropertyRef Name="Povar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Client_ToPerson">
+    <End Role="Person" Type="Self.Person" Multiplicity="1" />
+    <End Role="Client" Type="Self.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="Id_person" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_ToPerson">
+    <End Role="Person" Type="Self.Person" Multiplicity="1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="Id_person" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_ToChange">
+    <End Role="Change" Type="Self.Change" Multiplicity="1" />
+    <End Role="Table" Type="Self.Table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Change">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Table">
+        <PropertyRef Name="Id_Change" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_ToClient">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Table" Type="Self.Table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Table">
+        <PropertyRef Name="Client" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище Person_SQLModelContainer">
+    <EntitySet Name="Change" EntityType="Self.Change" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Client" EntityType="Self.Client" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Table" EntityType="Self.Table" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Change_ToAdmin" Association="Self.FK_Change_ToAdmin">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Change" EntitySet="Change" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Change_ToBarista" Association="Self.FK_Change_ToBarista">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Change" EntitySet="Change" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Change_ToHost" Association="Self.FK_Change_ToHost">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Change" EntitySet="Change" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Change_ToHostes" Association="Self.FK_Change_ToHostes">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Change" EntitySet="Change" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Change_ToOfic1" Association="Self.FK_Change_ToOfic1">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Change" EntitySet="Change" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Change_ToOfic2" Association="Self.FK_Change_ToOfic2">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Change" EntitySet="Change" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Change_ToPovar" Association="Self.FK_Change_ToPovar">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Change" EntitySet="Change" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Client_ToPerson" Association="Self.FK_Client_ToPerson">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="Client" EntitySet="Client" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_ToPerson" Association="Self.FK_Employee_ToPerson">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_ToChange" Association="Self.FK_Table_ToChange">
+      <End Role="Change" EntitySet="Change" />
+      <End Role="Table" EntitySet="Table" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_ToClient" Association="Self.FK_Table_ToClient">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Table" EntitySet="Table" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
