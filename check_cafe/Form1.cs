@@ -18,17 +18,17 @@ namespace check_cafe
             InitializeComponent();
             string adres;
             Employee host;
-            using (Login f_login = new Login())
+            using (Login f_login = new Login()) //открываем форму логин через. using нужен для автоматической сборки мусора, после выполнения кода в {} все данные f_login будут удалены и недоступны
             {
                 f_login.ShowDialog();
-                host = f_login._host;
-                adres = f_login._adres;
+                host = f_login._host;  //для того чтобы сохранить данные о хосте и адресе смены, сорханяем их в другие ячейки памяти.
+                adres = f_login._adres;  // сохраняем отдельно потому что записать время должны именно с открытия смены, смена будет открыта после выставления персонала в смене.
             }
             using (Change_Employee f_startChange = new Change_Employee())
             {
                 f_startChange.ShowDialog();
             }
-            //using (var context = new SQL_Cafe())
+            //using (var context = new SQL_Cafe()) забираем данные из бд и засовываем его в коллекцию
             //{
             //    var Nhost = context.Employee.ToList();
             //    foreach (var rec in Nhost)
@@ -40,7 +40,7 @@ namespace check_cafe
 
         private void Add_client_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("add");
+            MessageBox.Show("add");  //это необходимо позднее заменить.
         }
     }
 }

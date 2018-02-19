@@ -12,7 +12,7 @@ namespace check_cafe
 {
     public partial class Add_Employee : Form
     {
-        public Add_Employee()
+        public Add_Employee() // необходимо проводить проверку при добавлении сотруника на наличие его в списке.
         {
             InitializeComponent();
         }

@@ -19,9 +19,9 @@ namespace check_cafe
 
         private void AddNewEmployee_Click(object sender, EventArgs e)
         {
-            using (Add_Employee f_addEmp = new Add_Employee())
+            using (Add_Employee f_addEmp = new Add_Employee())  //комментарий аналогичен в форме1, смотри там.
             {
-                f_addEmp.ShowDialog();
+                f_addEmp.ShowDialog();   //открываем форму регистрации нового сотрудника
             }
         }
     }
