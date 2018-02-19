@@ -20,3 +20,4 @@ C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_ca
 C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.csproj.CoreCompileInputs.cache
 C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.exe
 C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.pdb
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.csprojResolveAssemblyReference.cache
