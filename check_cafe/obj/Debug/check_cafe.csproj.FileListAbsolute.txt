@@ -20,6 +20,7 @@ C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_ca
 C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.csproj.CoreCompileInputs.cache
 C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.exe
 C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.pdb
+<<<<<<< HEAD
 D:\Мишель\vs c#\remake\master\check_cafe\bin\Debug\Person_SQL.mdf
 D:\Мишель\vs c#\remake\master\check_cafe\bin\Debug\Person_SQL_log.ldf
 D:\Мишель\vs c#\remake\master\check_cafe\bin\Debug\check_cafe.exe.config
@@ -43,3 +44,6 @@ D:\Мишель\vs c#\remake\master\check_cafe\obj\Debug\check_cafe.csproj.Gener
 D:\Мишель\vs c#\remake\master\check_cafe\obj\Debug\check_cafe.csproj.CoreCompileInputs.cache
 D:\Мишель\vs c#\remake\master\check_cafe\obj\Debug\check_cafe.exe
 D:\Мишель\vs c#\remake\master\check_cafe\obj\Debug\check_cafe.pdb
+=======
+C:\Users\byksirov.i\Documents\GitHub\programs_test\check_cafe\obj\Debug\check_cafe.csprojResolveAssemblyReference.cache
+>>>>>>> a4f91c6bb1fb3c67bd056622ecccf772fbb7e530
