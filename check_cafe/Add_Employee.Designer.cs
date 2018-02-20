@@ -123,6 +123,7 @@
             this.Add_emp.TabIndex = 10;
             this.Add_emp.Text = "Добавить";
             this.Add_emp.UseVisualStyleBackColor = true;
+            this.Add_emp.Click += new System.EventHandler(this.Add_emp_Click);
             // 
             // Close_f
             // 
