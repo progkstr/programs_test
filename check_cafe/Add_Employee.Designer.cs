@@ -38,7 +38,7 @@
             this.t_Position = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Add_emp = new System.Windows.Forms.Button();
-            this.Close = new System.Windows.Forms.Button();
+            this.Close_f = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // t_Name
@@ -124,21 +124,22 @@
             this.Add_emp.Text = "Добавить";
             this.Add_emp.UseVisualStyleBackColor = true;
             // 
-            // Close
+            // Close_f
             // 
-            this.Close.Location = new System.Drawing.Point(250, 279);
-            this.Close.Name = "Close";
-            this.Close.Size = new System.Drawing.Size(84, 40);
-            this.Close.TabIndex = 11;
-            this.Close.Text = "Закрыть";
-            this.Close.UseVisualStyleBackColor = true;
+            this.Close_f.Location = new System.Drawing.Point(250, 279);
+            this.Close_f.Name = "Close_f";
+            this.Close_f.Size = new System.Drawing.Size(84, 40);
+            this.Close_f.TabIndex = 11;
+            this.Close_f.Text = "Закрыть";
+            this.Close_f.UseVisualStyleBackColor = true;
+            this.Close_f.Click += new System.EventHandler(this.Close_f_Click);
             // 
             // Add_Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(382, 344);
-            this.Controls.Add(this.Close);
+            this.Controls.Add(this.Close_f);
             this.Controls.Add(this.Add_emp);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.t_Position);
@@ -168,6 +169,6 @@
         private System.Windows.Forms.ComboBox t_Position;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Add_emp;
-        private System.Windows.Forms.Button Close;
+        private System.Windows.Forms.Button Close_f;
     }
 }

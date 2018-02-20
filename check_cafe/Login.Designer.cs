@@ -142,7 +142,6 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
