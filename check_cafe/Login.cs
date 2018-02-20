@@ -34,7 +34,7 @@ namespace check_cafe
             }
         }
 
-        private void bStart_Click(object sender, EventArgs e)
+        private void bStart_Click(object sender, EventArgs e)  //Проверка для Михаила)
         {
             foreach (var rec in host)
             {
