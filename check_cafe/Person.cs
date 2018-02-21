@@ -20,6 +20,15 @@ namespace check_cafe
             this.Client = new HashSet<Client>();
             this.Employee = new HashSet<Employee>();
         }
+        public Person(string _name, string _adres, string _phone )
+        {
+            this.Client = new HashSet<Client>();
+            this.Employee = new HashSet<Employee>();
+            Id = Guid.NewGuid();
+            Name = _name;
+            Adres = _adres;
+            Phone = _phone;
+        }
 
         public System.Guid Id { get; set; }
         public string Name { get; set; }

@@ -28,7 +28,7 @@ namespace check_cafe
         public virtual DbSet<Change> Change { get; set; }
         public virtual DbSet<Client> Client { get; set; }
         public virtual DbSet<Employee> Employee { get; set; }
-        public virtual DbSet<Person> Person { get; set; }
+        public virtual DbSet<Person> Persons { get; set; }
         public virtual DbSet<Table> Table { get; set; }
     }
 }
