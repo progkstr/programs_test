@@ -36,7 +36,9 @@ namespace check_cafe
                 {
                     Person rab = new Person(t_Name.Text, t_Adres.Text, t_Phone.Text);
                     db.Persons.Add(rab);
+                    
                     db.SaveChanges();
+                    db.SaveChangesAsync();
                     
                     var person = db.Persons.Where(p => p.Name == t_Name.Text).ToList();
                     MessageBox.Show(person[0].Name+" "+ person[0].Phone+ " "+ person[0].Id);

@@ -22,7 +22,12 @@ namespace check_cafe
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            throw new UnintentionalCodeFirstException();
+            modelBuilder.Configurations.Add(new _class.mapChange());
+            modelBuilder.Configurations.Add(new _class.MapClient());
+            modelBuilder.Configurations.Add(new _class.mapEmployee());
+            modelBuilder.Configurations.Add(new _class.mapPerson());
+            modelBuilder.Configurations.Add(new _class.mapTable());
+            //throw new UnintentionalCodeFirstException();
         }
     
         public virtual DbSet<Change> Change { get; set; }

@@ -49,6 +49,12 @@ namespace check_cafe
         private void bCancel_Click(object sender, EventArgs e)
         {
             Application.Exit();
+            //Person c = new Person();
+            //int t;
+            //string f;
+
+
+
         }
     }
 }
